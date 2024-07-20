@@ -1,0 +1,17 @@
+.buttonContainer {
+    margin-top: 20px;
+    font-family: 'DM Mono' monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background: transparent;
+    padding: 16px 50px;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(2px);
+  }
+  .buttonContainer:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    box-shadow: none;
+  }
+  

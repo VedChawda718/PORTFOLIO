@@ -1,0 +1,8 @@
+.bgContainer { 
+    background: url(../../assets/download.png);
+    opacity: 0.03;
+    z-index: -1000;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+.quoteContainer {
+  font-family: "DM Mono", monospace;
+  font-size: 75px;
+  font-weight: 600;
+}
+.bodyContainer {
+  width: 80%;
+  padding: 60px;
+  margin: auto;
+}
+.aboutContainer {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+.helloContainer {
+  height: 25px;
+}
+.resumeButton {
+ height: 60px;
+ transition: transform 0.3s ease;
+ margin-top: 20px;
+}
+.resumeButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: none;
+}

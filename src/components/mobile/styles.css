@@ -1,0 +1,110 @@
+.mobileContainer {
+  background: url(../../assets/peakpx.jpg);
+  border: 3.5px solid rgb(245, 245, 245);
+  background-size: cover ;
+  width: 30%;
+  height: 100vh;
+  margin: 0px 0px 0px 20px;
+  border-radius: 60px;
+  box-shadow: 2px 6px 100px 10px rgb(112, 112, 112);
+}
+.mobileWrapper {
+  border: 12px solid black;
+  border-radius: 60px;
+  height: 96.65vh;
+}
+.mobileHeader {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.mobileHeader span {
+  color: white;
+}
+.mobileHeaderIcons {
+  color: white;
+  margin-left: 5px;
+}
+.timeContainer {
+  color: white;
+}
+.social-option {
+  color: white;
+  height: 22px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+.social-option:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.mobileSocials {
+  text-align: center;
+}
+.music-playerContainer img {
+  width: 180px;
+  height: 180px;
+}
+.music-playerContainer {
+  text-align: center;
+  margin-top: 40px;
+}
+.globeIcon {
+  color: rgb(1, 135, 1);
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.music-card {
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+}
+.music-card.active {
+  border: 2px solid rgb(1, 135, 1);
+  box-shadow: 2px 2px 50px 3px #2f2f2f;
+}
+.musicCardContainer {
+  text-align: center;
+}
+.center-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+.playButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px;
+  position: relative;
+  bottom: 25px;
+}
+.playButton {
+  padding: 20px 25px;
+  border: none;
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  background: rgba(61, 61, 61, 0.2);
+  backdrop-filter: blur(4px);
+  color: white;
+  box-shadow: 2px 2px 80px 8px #525252;
+  transition: transform 0.3s ease;
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.headerContainer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-rightText {
+  font-family: "Hind";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+.navItem {
+  font-weight: 400;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.navItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 2;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+.arrowIcon {
+  margin-left: 4px;
+  transform: rotate(5deg);
+}
