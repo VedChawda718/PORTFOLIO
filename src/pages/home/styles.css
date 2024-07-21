@@ -1,28 +1,125 @@
-.quoteContainer {
-  font-family: "DM Mono", monospace;
-  font-size: 75px;
-  font-weight: 600;
+* {
+  margin: 0;
 }
 .bodyContainer {
-  width: 80%;
-  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  word-wrap: break-word;
+  padding-top: 50px;
   margin: auto;
+}
+.nameContainer {
+  font-family: "DM Mono", monospace;
+  font-size: 120px;
+  font-weight: 600;
 }
 .aboutContainer {
   font-size: 22px;
-  color: black;
   font-weight: 400;
 }
 .helloContainer {
   height: 25px;
 }
 .resumeButton {
- height: 60px;
- transition: transform 0.3s ease;
- margin-top: 20px;
+  height: 60px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
 }
 .resumeButton:hover {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: none;
 }
+
+@media screen and (max-width: 800px) {
+  .nameContainer {
+    font-size: 90px;
+  }
+  .aboutContainer {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .nameContainer {
+    font-size: 82px;
+  }
+  .aboutContainer {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .nameContainer {
+    font-size: 70px;
+  }
+  .aboutContainer {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 56px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nameContainer {
+    font-size: 60px;
+  }
+  .aboutContainer {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 56px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .nameContainer {
+    font-size: 50px;
+  }
+  .aboutContainer {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 56px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nameContainer {
+    font-size: 46px;
+  }
+  .aboutContainer {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 275px) {
+  .nameContainer {
+    font-size: 38px;
+  }
+  .aboutContainer {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .resumeButton {
+    height: 50px;
+  }
+}
+
+
+
+

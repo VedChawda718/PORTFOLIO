@@ -1,51 +1,31 @@
 import React from "react";
-import Header from "../../components/header";
-import TypedEffect from "../../components/typedEffect/index";
 import "./styles.css";
-import ResumeButton from "../../assets/resumeButton.png"
+import ResumeButton from "../../assets/resumeButton.png";
 import GsapMagnetic from "../../components/gsap/gsapMagnetic/index";
+import NavBar from "../../components/header/navbar";
 
-const Home = () => {
-  return (
-    <>
-      <Header />
-      <RenderBody />
-    </>
-  );
+const Home = ({openHamburger, currentNav, handleNavChange}) => {
+  return <RenderBody openHamburger={openHamburger} currentNav={currentNav} handleNavChange={handleNavChange}/>;
 };
 
 export default Home;
 
-const RenderBody = () => {
-  const helloArray = [
-    "नमस्ते",
-    "Hi",
-    "Hola",
-    "Bonjour",
-    "Hallo",
-    "Ciao",
-    "こんにちは",
-    "你好",
-  ];
+const RenderBody = ({openHamburger, currentNav, handleNavChange}) => {
   return (
-    <>
-      <div className="bodyContainer">
-        <div className="helloContainer">
-          <TypedEffect displayArray={helloArray} />
-        </div>
-        <div className="aboutContainer">
-          I'm <b>Ved Chawda</b>
-        </div>
-        <div className="aboutContainer">
-          Designer, Developer, Artist & Prototyper
-        </div>
-        <div className="quoteContainer">
-          BLENDING CREATIVITY & FUNCTIONALITY
-        </div>
-        <GsapMagnetic>
-        <img src={ResumeButton} alt="resume-button" className="resumeButton"/>
-        </GsapMagnetic>
-      </div>
+  <>
+    {openHamburger ? <NavBar  openHamburger={openHamburger}  currentNav={currentNav} handleNavChange={handleNavChange}/> : <>   <span className="bodyContainer">
+      <span className="aboutContainer">Hi I'm</span>
+      <span className="nameContainer">
+        <span>VED CHAWDA</span>
+      </span>
+      <span className="aboutContainer">
+        Designer, Developer, Artist & Prototyper
+      </span>
+      <GsapMagnetic>
+        <img src={ResumeButton} alt="resume-button" className="resumeButton" />
+      </GsapMagnetic>
+    </span></>}
+ 
     </>
   );
 };

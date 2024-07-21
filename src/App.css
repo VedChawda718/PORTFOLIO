@@ -1,0 +1,6 @@
+.homeWrapper {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+  }

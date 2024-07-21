@@ -5,7 +5,7 @@ const TypedEffect = ({displayArray}) => {
   const greetings = displayArray;
 
   return (
-    <div className="typed-container">
+    <span className="typed-container">
       <ReactTyped
         strings={greetings}
         typeSpeed={100}
@@ -13,7 +13,7 @@ const TypedEffect = ({displayArray}) => {
         backDelay={1500}
         loop
       />
-    </div>
+    </span>
   );
 };
 

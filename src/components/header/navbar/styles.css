@@ -1,0 +1,42 @@
+.navItems {
+  display: flex;
+  align-items: center;
+}
+.navItems.menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+.navItem {
+  font-weight: 100;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.navItem.menu {
+    font-size: 2rem;
+    margin-top: 1.3rem;
+    margin-left: 0px;
+}
+.navItem.open {
+  font-weight: 500;
+}
+.navItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 2;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+.navItem:hover::after {
+  width: 100%;
+}
